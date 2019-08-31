@@ -1,0 +1,2 @@
+# pokemonIzberg
+technical exercice
