@@ -1,11 +1,27 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom"
+
 
 function NavMain() {
   return (
-    <div>
-      <nav>
-        <div>
-          Made By ME
+    <div className="nav-bar">
+      <nav className="nav">
+        <div className="nav-side nav-logo">
+          <NavLink to="/" className="link"> <h1>IZBERG'S POKEDEX</h1></NavLink>
+
+        </div>
+        <div className="nav-side navMain-choices">
+
+          <NavLink to="/pokemons" className="nav-item">
+            See my Pokemon
+            </NavLink>
+
+
+          <a href="https://github.com/OctaveStoufflet" className="nav-item">Github</a>
+
+
+          <a href="https://www.linkedin.com/in/octavestoufflet/" className="nav-item">Linkedin</a>
+
         </div>
       </nav>
     </div>

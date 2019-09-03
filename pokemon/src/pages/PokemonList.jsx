@@ -3,7 +3,7 @@ import Pokemon from "../components/Pokemon"
 
 import axios from "axios";
 
-class Pokemons extends Component {
+class PokemonList extends Component {
   state = {
     pokemon: []
   };
@@ -22,10 +22,10 @@ class Pokemons extends Component {
   render() {
     console.log(this.state.pokemon)
     return (
-      <div>
+      <div className="pokemon-container">
         {this.state.pokemon.map((poke, i) => {
           return (
-            <Pokemon name={poke.name} key={i} />
+            <Pokemon name={poke.name} url={poke.url} key={i} />
           )
         })}
       </div>
@@ -33,4 +33,4 @@ class Pokemons extends Component {
   }
 }
 
-export default Pokemons;
+export default PokemonList;

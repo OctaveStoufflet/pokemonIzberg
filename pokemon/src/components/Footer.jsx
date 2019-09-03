@@ -2,13 +2,9 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
-      <nav>
-        <div>
-          Made By ME
-        </div>
-      </nav>
-    </div>
+    <footer className="footer">
+      Made by Octave Stoufflet
+    </footer>
   )
 }
 
