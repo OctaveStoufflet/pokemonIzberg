@@ -1,35 +1,30 @@
 import React, { Component } from "react"
 import PokemonDetails from "../pages/PokemonDetails"
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 class Pokemon extends Component {
+
   state = {
-    pokemon: []
-  };
-  componentDidMount = () => {
-    axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${this.props.name}`)
-      .then(onePokemon => {
-        this.setState({ pokemon: onePokemon.data })
-        console.log(onePokemon.data)
-      })
-      .catch(err => { console.log(err) })
+    pokemonIndex: "",
+    imageUrl: ""
   }
 
-
+  componentDidMount() {
+    const { name, url } = this.props;
+    const pokemonIndex = url.split('/')[url.split('/').length - 2];
+    // const imageUrl = `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`;
+    this.setState({ name, pokemonIndex });
+  }
 
   render() {
     return (
       <div className="pokemon-item" >
         <h1>{this.props.name.toUpperCase()}</h1>
-        <Link to="/details" className="details-link">Details</Link>
-
-
+        <Link to={`pokemon/${this.state.pokemonIndex}`}>Details</Link>
       </div>
     )
   }
-
 }
 
 

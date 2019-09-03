@@ -9,13 +9,15 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
+  console.log(this);
+
   return (
     <div>
       <NavMain />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/pokemons" component={PokemonList} />
-        <Route path="/details" component={PokemonDetails} />
+        <Route exact path="/pokemon" component={PokemonList} />
+        <Route exact path="/pokemon/:pokemonIndex" component={PokemonDetails} />
       </Switch>
       <Footer />
     </div>

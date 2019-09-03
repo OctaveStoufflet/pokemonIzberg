@@ -12,7 +12,7 @@ function NavMain() {
         </div>
         <div className="nav-side navMain-choices">
 
-          <NavLink to="/pokemons" className="nav-item">
+          <NavLink to="/pokemon" className="nav-item">
             See my Pokemon
             </NavLink>
 

@@ -90,3 +90,9 @@
   text-decoration: none;
   color: blue;
 }
+
+/* POKEMON DETAILS */
+.img-container {
+  display: flex;
+  justify-content: center;
+}

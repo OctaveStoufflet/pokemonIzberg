@@ -5,7 +5,7 @@ function Home() {
 
   return (
     <div className="home-container">
-      <button className="btn"><NavLink to="/pokemons" className="title">Click here to see my collection</NavLink></button>
+      <button className="btn"><NavLink to="/pokemon" className="title">Click here to see my collection</NavLink></button>
     </div>
   )
 }
