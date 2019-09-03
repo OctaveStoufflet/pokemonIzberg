@@ -29,10 +29,12 @@ class PokemonDetails extends Component {
     console.log(this.state)
     return (
 
-      <div className="img-container">
+      <div className="details-container">
         <img src={this.state.img} alt="nein" />
-        <h1>{this.state.name}</h1>
-        <p>{this.state.abilities.map((abilityObject) => abilityObject.ability.name).join(', ')}</p>
+        <div>
+          <p>Name: {this.state.name}</p>
+          <p>Abilities: {this.state.abilities.map((abilityObject) => abilityObject.ability.name).join(', ')}</p>
+        </div>
 
       </div>
     )

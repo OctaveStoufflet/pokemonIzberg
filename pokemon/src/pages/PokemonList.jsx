@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Pokemon from "../components/Pokemon"
+import PokemonCard from "../components/PokemonCard"
 
 import axios from "axios";
 
@@ -25,7 +25,7 @@ class PokemonList extends Component {
       <div className="pokemon-container">
         {this.state.pokemon.map((poke, i) => {
           return (
-            <Pokemon name={poke.name} url={poke.url} key={i} />
+            <PokemonCard name={poke.name} url={poke.url} key={i} />
           )
         })}
       </div>

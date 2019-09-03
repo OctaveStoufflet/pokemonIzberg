@@ -45,12 +45,12 @@
   padding-top: 4%;
 }
 
-/* FOOTER
+/* FOOTER */
 .footer {
-  background: #272728;
-  height: 100px;
+  background: white;
   width: 100%;
-} */
+  position: fixed;
+}
 
 /* BODY */
 .home-container {
@@ -92,7 +92,10 @@
 }
 
 /* POKEMON DETAILS */
-.img-container {
+.details-container {
   display: flex;
   justify-content: center;
+  border: 1px solid black;
+  align-items: center;
+  height: calc(100vh - (84px));
 }

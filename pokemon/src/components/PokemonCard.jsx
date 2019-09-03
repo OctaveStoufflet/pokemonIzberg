@@ -1,9 +1,7 @@
 import React, { Component } from "react"
-import PokemonDetails from "../pages/PokemonDetails"
 import { Link } from "react-router-dom";
-import axios from "axios";
 
-class Pokemon extends Component {
+class PokemonCard extends Component {
 
   state = {
     pokemonIndex: "",
@@ -21,11 +19,11 @@ class Pokemon extends Component {
     return (
       <div className="pokemon-item" >
         <h1>{this.props.name.toUpperCase()}</h1>
-        <Link to={`pokemon/${this.state.pokemonIndex}`}>Details</Link>
+        <Link to={`pokemon/${this.state.pokemonIndex}`} className="details-link">Details</Link>
       </div>
     )
   }
 }
 
 
-export default Pokemon;
+export default PokemonCard;
