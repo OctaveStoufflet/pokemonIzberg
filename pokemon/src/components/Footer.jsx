@@ -1,5 +1,7 @@
 import React from "react";
 
+//Footer
+
 function Footer() {
   return (
     <footer className="footer">

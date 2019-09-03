@@ -3,6 +3,8 @@ import PokemonCard from "../components/PokemonCard"
 
 import axios from "axios";
 
+// List of pokemon
+
 class PokemonList extends Component {
   state = {
     pokemon: []

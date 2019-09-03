@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom";
 
+//Pokemon display
+
 class PokemonCard extends Component {
 
   state = {

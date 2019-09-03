@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+// Pokemon's details
+
 class PokemonDetails extends Component {
 
   state = {
